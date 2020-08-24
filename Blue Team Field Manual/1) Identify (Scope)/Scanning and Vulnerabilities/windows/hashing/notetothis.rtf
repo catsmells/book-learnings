@@ -1,0 +1,7 @@
+Per reference: https://technet.microsoft.com/en-us/library/dn520872.aspx
+May be possible to create a master database and compare to all systems from a command line. Fast baseline and difference.
+
+        PS C:\> Get-FileHash <FILE TO HASH> | Format-List
+        PS C:\> Get-FileHash -algorithm md5 <FILE TO HASH>
+        C:\> certutil -hashfile <FILE TO HASH> SHA1
+        C:\> certutil -hashfile <FILE TO HASH> MD5
